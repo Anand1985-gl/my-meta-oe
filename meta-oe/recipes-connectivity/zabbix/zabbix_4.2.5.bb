@@ -19,7 +19,7 @@ HOMEPAGE = "http://www.zabbix.com/"
 SECTION = "Applications/Internet"
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://COPYING;md5=300e938ad303147fede2294ed78fe02e"
-DEPENDS  = "openldap virtual/libiconv"
+DEPENDS  = "openldap virtual/libiconv libpcre"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -28,8 +28,8 @@ SRC_URI = "http://jaist.dl.sourceforge.net/project/zabbix/ZABBIX%20Latest%20Stab
     file://zabbix-agent.service \
 "
 
-SRC_URI[md5sum] = "489d21b464277c0d412155c7e5611a8f"
-SRC_URI[sha256sum] = "4445f26c025009681c29c9b350aa6c4ee7b124ddcaf1609ae36c55997bcb8cf2"
+SRC_URI[md5sum] = "4dd3fe96a5da8598ba0caf181387a3f7"
+SRC_URI[sha256sum] = "4dba94cc8c5f1d97b596e636ff9346c3bdea59ac04a97f1236a6d5e69d72ab8c"
 
 inherit autotools-brokensep linux-kernel-base pkgconfig systemd useradd
 
